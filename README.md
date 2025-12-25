@@ -1,3 +1,64 @@
+Instrucciones para ejecutar el cuaderno en Google Colab
+
+Este proyecto se desarrolla en un cuaderno de Jupyter (.ipynb), el cual puede ejecutarse fácilmente en Google Colab sin necesidad de instalar software adicional de manera local.
+
+🔹 Opción 1: Abrir el cuaderno directamente desde GitHub
+
+Accede al repositorio en GitHub.
+
+Localiza el archivo con extensión .ipynb.
+
+Copia la URL del archivo.
+
+Ingresa a Google Colab:
+https://colab.research.google.com
+
+Selecciona la opción “GitHub”.
+
+Pega la URL del repositorio o del archivo y ábrelo.
+
+Ejecuta las celdas de forma secuencial usando Shift + Enter.
+
+🔹 Opción 2: Subir el archivo manualmente a Google Colab
+
+Descarga el archivo .ipynb desde el repositorio.
+
+Ingresa a https://colab.research.google.com
+.
+
+Selecciona “Subir”.
+
+Carga el archivo descargado.
+
+Ejecuta las celdas en orden.
+
+🔹 Consideraciones importantes
+
+El cuaderno hace uso de las siguientes librerías:
+
+pandas
+
+numpy
+
+matplotlib
+
+En caso de utilizar archivos externos (por ejemplo, un archivo .json), asegúrate de:
+
+Subirlos manualmente al entorno de Colab, o
+
+Montar Google Drive utilizando:
+
+from google.colab import drive
+drive.mount('/content/drive')
+
+
+Verifica que las rutas de los archivos coincidan con la estructura del entorno de Colab.
+
+🔹 Recomendación
+
+Ejecutar las celdas en orden garantiza que las transformaciones de datos y el análisis se realicen correctamente.
+
+
 # 📊 Análisis de Churn – Telecom X
 
 ## 🧾 Introducción
